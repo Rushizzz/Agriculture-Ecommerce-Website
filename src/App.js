@@ -12,55 +12,96 @@ import {createBrowserRouter,
 
 import Signin from './pages/Signin';
 import React, {useState, useEffect} from 'react'
-import bar from './icons/bar.png'
-import close from './icons/close.png'
 import Category from './pages/Category';
 import Category1 from './pages/Category1';
 import Productpage from './pages/Productpage';
 import Signup from './pages/Signup';
 
+//icons imports
+import homeIcon from './icons/home.png'
+import categoryIcon from './icons/category.png'
+import loginIcon from './icons/login.png'
+import searchIcon from './icons/search.png'
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(true)
-  
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu)
-  }
+
+   const [windowDimension, setWindowDimension] = useState(null);
+
+    useEffect(() => {
+      setWindowDimension(window.innerWidth);
+    }, []);
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimension(window.innerWidth);
+      }
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const isMobile = windowDimension <= 640;
 
   return <>
-    <nav className="Navigation">
-      <div className="logo">
+
+    {isMobile ? (
+      <nav className="Navigation-mobile">
+      <div className="logo-mobile">
         LOGO
       </div>
-      <div className="search">
-        Search
-        <div className="searchcontainer">
-          <select placeholder='cateogry'>
-            <option value="Products">category</option>
-            <option value="Seeds">Seeds</option>
-            <option value="Fertilizers">Fertilizers</option>
-          </select>
-          <input type="text" placeholder='search products' className='searchBar'/>
+      <div className="search-mobile">
+          <div className="search-logo">
+            <img src={searchIcon} />
+          </div>
+          <input type="text" placeholder='search products' className='searchBar-mobile'/>
+      </div>
+        <div className='Navbar-mobile'>
+          <Link className='links-mobile' to="/">
+            <img src={homeIcon}/>
+            Home
+          </Link>
+          <Link className="links-mobile" to="/products">
+            <img src={categoryIcon}/>
+            Category
+          </Link>
+          <Link className="links-mobile" to="/signin">
+            <img src={loginIcon}/>
+            Sign in
+          </Link>
         </div>
-      </div>
-      <div className='Navbar'>
-        <Link className='links' to="/">Home</Link>
-        <Link className="links" to="/products">Category</Link>
-        <Link className="links" to="/signin">Sign In</Link>
-      </div>
 
-      <div id='mobileView' className={`Navbar-mobile ${toggleMenu && 'hide'}`}>
-        <div className="link-container">
-          <Link className='links' to="/" onClick={toggleNav}>Home</Link>
-          <Link className="links" to="/products" onClick={toggleNav}>Products</Link>
-          <Link className="links" to="/signin" onClick={toggleNav}>Sign In</Link>
-        </div>
-      </div>
-      <button className='btn' onClick={toggleNav}>{toggleMenu && <img src={bar}/>} {!toggleMenu && <img src={close}/>} </button>
     </nav>
+    ):(
+    <nav className="Navigation">
+          <div className="logo">
+            LOGO
+          </div>
+          <div className="search">
+            Search
+            <div className="searchcontainer">
+              <select placeholder='cateogry'>
+                <option value="Products">category</option>
+                <option value="Seeds">Seeds</option>
+                <option value="Fertilizers">Fertilizers</option>
+              </select>
+              <input type="text" placeholder='search products' className='searchBar'/>
+            </div>
+          </div>
+            <div className='Navbar'>
+              <Link className='links' to="/">Home</Link>
+              <Link className="links" to="/products">Category</Link>
+              <Link className="links" to="/signin">Sign In</Link>
+            </div>
+        </nav>
+    )}
     <div>
       <Outlet/>
     </div>
+    {isMobile?(
+      <div className="yes"></div>
+    ):(
+      <div className="no"></div>
+    )}
   </>
 }
 
