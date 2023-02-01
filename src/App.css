@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+.App{
+  height: 100vh;
+  
+  font-family: 'Lexend', sans-serif;
+}
+
+.page{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.page h1{
+  margin: 30px;
+}
+
+.Navigation{
+  
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+.Navbar{
+ 
+}
+
+.Navbar-mobile{
+  display: none;
+}
+
+.links{
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.links:hover{
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+
+.btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  padding: 5px;
+  color: #000;
+  font-size: 18px;
+}
+
+
+.search{
+  margin-left: 10%;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.searchcontainer{
+  height: 40%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.searchcontainer select{
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px 00px 0px 5px;
+}
+
+.searchBar{
+  height: 70%;  
+  border: 3px solid;
+  border-color: black;
+}
+
+
+.searchcontainer input{
+  width: 70%;
+  border-color: transparent;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.banner-container{
+  
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+  overflow-y:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner{
+  
+  height: 35vh;
+  width: 90%;
+  border-radius: 30px;
+  border: 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  transition: 0.5s;
+}
+
+.banner:hover{
+  transition: 0.5s;
+  background-color: antiquewhite;
+}
+
+.banner-image{
+  border-radius: 20px;
+  height: 90%;
+  width: 30%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image img{
+  height: 100%;
+  width: auto;
+  
+}
+
+.banner-info{
+  height: 90%;
+  width: 50%;
+}
+
+.category-bg{
+  background-color: #F7F7F7;
+}
+
+.category-container{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.category-links{
+  text-decoration: none;
+  color: black;
+}
+
+.category-product{
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+.category-product:hover{
+  transition: 0.3s;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-product .image img{
+  height: 150px;
+  width: auto;
+}
+
+.category-inside{
+  height: 100%;
+  width: 80%;
+  display: flex;
+}
+
+.category-filter{
+  border-radius: 20px;
+  height: 95%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-filter input{
+  border-color: transparent;
+  border-bottom: 2px solid;
+  height: 20px;
+  width: 90%;
+}
+
+.brands-container{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.brand-select{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-select label{
+  margin-left: 20%;
+}
+
+.category-items-container{
+  
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product{
+  background-color: white;
+  height: 350px;
+  width: 270px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
+  margin: 15px;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product:hover{
+  transition: 0.2s;
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product .product-image img{
+  height: 200px;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.product .product-info h3{
+  margin: 0px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.product .product-info p{
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.product .product-info{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.product-buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.product .product-info button{
+  margin-top: 5px;
+  border-radius: 15px;
+  border: 3px solid black;
+  height: 35px;
+  width: 150px;
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+}
+
+.product .product-info button:hover{
+  transition: 0.2s;
+  color: black;
+  font-weight: bold;
+  border-color: rgb(78, 243, 136);
+  background-color: rgb(78, 243, 136);
+}
+
+.textdecoration{
+  text-decoration: none;
+  color: black;
+}
+
+.main-section{
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+  overflow-y:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image{
+  height: 100%;
+  width: 40%;
+  display: flex;
+}
+
+.main-info{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.main-buy{
+  
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-panel{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.image-panel img{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.front-image{
+  height: 70%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-image img{
+  height: 300px;
+}
+
+.main-info .heading{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  
+}
+
+.main-info .heading p{
+  font-size: 10px;
+}
+
+.main-info h4{
+  margin-left: 20px;
+  height: 10%;
+}
+
+.MRP{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  height: 30%;
+
+}
+
+.offer-container{
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+ 
+}
+
+.offer{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.unit{
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.unit .unit-box{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pincode{
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pincode input{
+  height: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.pincode button{
+  height: 25px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+.sign-in-box{
+  
+  height: 50%;
+  width: 20%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.sign-in-box h2{
+  margin: 5px;
+}
+
+.sign-in-box h3{
+  margin: 5px;
+}
+
+.sign-in-box input{
+  height: 25px;
+  width: 70%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.sign-in-box button{
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 10px;
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.sign-up-box{
+  background-color: aliceblue;
+  height: 50%;
+  width: 20%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+

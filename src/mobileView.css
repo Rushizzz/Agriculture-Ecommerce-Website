@@ -1,0 +1,64 @@
+@media screen and (max-width: 767px) {
+
+    
+    
+    .Navbar{
+        display: none;
+    }
+
+    .Navbar-mobile{
+        background-color: aqua;
+        height: 100vh;
+        width: 85%;
+        margin-left: 15%;
+
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px 0px 0px 10px;
+        overflow: hidden;
+    }
+
+    .hide{
+        
+        display: none;
+    }
+
+    .link-container{
+        background-color: blue;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .links{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        color: #f1f1f1;
+        cursor: pointer;
+        padding: 20px;
+        width: 70%;
+        margin: 10px;
+        border-radius: 10px;
+        border-color: transparent;
+        background-color: black;
+      }
+
+    .links:hover{
+        background-color: aqua;
+    }
+    .btn{
+        background-color: white;
+        border-radius: 10px;
+        border-color: transparent;
+        display: block;
+    }
+
+
+}
