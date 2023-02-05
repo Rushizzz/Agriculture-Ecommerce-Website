@@ -16,12 +16,17 @@ import Category from './pages/Category';
 import Category1 from './pages/Category1';
 import Productpage from './pages/Productpage';
 import Signup from './pages/Signup';
+import Brands from './pages/Brands';
+import Aboutus from './pages/Aboutus';
 
 //icons imports
 import homeIcon from './icons/home.png'
 import categoryIcon from './icons/category.png'
 import loginIcon from './icons/login.png'
 import searchIcon from './icons/search.png'
+import cartIcon from './icons/cart.png'
+import signinIcon from './icons/signin.png'
+import searchHIcon from './icons/searchH.png'
 
 const Navbar = () => {
 
@@ -41,6 +46,8 @@ const Navbar = () => {
     }, []);
 
     const isMobile = windowDimension <= 640;
+
+    
 
   return <>
 
@@ -76,21 +83,23 @@ const Navbar = () => {
           <div className="logo">
             LOGO
           </div>
-          <div className="search">
-            Search
-            <div className="searchcontainer">
-              <select placeholder='cateogry'>
-                <option value="Products">category</option>
-                <option value="Seeds">Seeds</option>
-                <option value="Fertilizers">Fertilizers</option>
-              </select>
-              <input type="text" placeholder='search products' className='searchBar'/>
-            </div>
-          </div>
             <div className='Navbar'>
               <Link className='links' to="/">Home</Link>
-              <Link className="links" to="/products">Category</Link>
-              <Link className="links" to="/signin">Sign In</Link>
+              <Link className="links" to="/products">Categories</Link>
+              <Link className="links" to="/brands">Brands</Link>
+              <Link className='links' to="/aboutus">About</Link>
+            </div>
+            <div className="search">
+                <div className="search-container">
+                  <input type="text" placeholder='    search products' className='searchBar'/>
+                  <div className="search-btn">
+                    <img src={searchHIcon} alt="" srcset="" />
+                  </div>
+                </div>
+                
+                  <Link className="second-links" to="/products"><img src={cartIcon}/></Link>
+                  <Link className="second-links" to="/signin"><img src={signinIcon}/></Link>
+                
             </div>
         </nav>
     )}
@@ -115,6 +124,8 @@ const router = createBrowserRouter(
       <Route path="/category1" element={<Category1/>}/>
       <Route path='/productpage' element={<Productpage/>}/>
       <Route path='/signup' element={<Signup/>}/>
+      <Route path='/brands' element={<Brands/>}/>
+      <Route path='/aboutus' element={<Aboutus/>}/>
     </Route>
   )
 )
