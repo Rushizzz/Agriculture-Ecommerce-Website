@@ -34,11 +34,10 @@ const Footer = () => {
 
         <div className="footer-links">
             <h3>Shop</h3>
-            <Link to='#' className='footer-link'>Most Popular</Link>
-            <Link to='#' className='footer-link'>Seasonal</Link>
-            <Link to='#' className='footer-link'>Brands</Link>
-            <Link to='#' className='footer-link'>Categories</Link>
-            <Link to='crops' className='footer-link'>Crops</Link>
+            <Link to='/popularproducts' className='footer-link'>Most Popular</Link>
+            <Link to='/brands' className='footer-link'>Brands</Link>
+            <Link to='/products' className='footer-link'>Categories</Link>
+            <Link to='/crops' className='footer-link'>Crops</Link>
         </div>
 
         <div className="footer-links">

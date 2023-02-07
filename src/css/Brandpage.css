@@ -1,0 +1,42 @@
+.brand-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-name{
+    height: 20%;
+    width: 40%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .brnad-name-container{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .brand-logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .brand-logo img{
+    height: 80%;
+  }
+  
+  .info{
+    width: 50%;
+    text-align: center;
+  }

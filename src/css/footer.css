@@ -8,6 +8,8 @@
     flex-wrap: wrap;
     padding-left: 10%;
     padding-right: 10%;
+    /* position: relative;
+    bottom: 0px; */
 }
 
 .footer .logo-footer{

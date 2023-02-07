@@ -43,7 +43,7 @@ const Crops = () => {
                 />    
             </Link>
         </div>
-        <Link className='explore-more' to='/crops'>Explore more</Link>
+        <Link className='explore-more margin' to='/crops'>Explore more</Link>
     </div>
   )
 }

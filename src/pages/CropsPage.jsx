@@ -10,10 +10,10 @@ import sugar from '../images/sugar.png'
 
 const CropsPage = () => {
   return (
-    <div className='crop-page'>
-        <div className='crops-products'>
+    <div className='crop-page '>
+        <div className='crops-page-products'>
             <h1>Crops</h1>
-            <div className="crop-container">
+            <div className="crop-container ">
                 <Link className='crop-link' to='#'>
                     <Cropoption
                         image={wheat}
@@ -44,6 +44,38 @@ const CropsPage = () => {
                         cname={"Sugar"}
                     />    
                 </Link>
+
+                 <Link className='crop-link' to='#'>
+                    <Cropoption
+                        image={wheat}
+                        cname={"Wheat"}
+                    />    
+                </Link>
+                <Link className='crop-link' to='#'>
+                    <Cropoption
+                        image={rice}
+                        cname={"Rice"}
+                    />    
+                </Link>
+                <Link className='crop-link' to='#'>
+                    <Cropoption
+                        image={tomato}
+                        cname={"Tomato"}
+                    />    
+                </Link>
+                <Link className='crop-link' to='#'>
+                    <Cropoption
+                        image={onion}
+                        cname={"Onion"}
+                    />    
+                </Link>
+                <Link className='crop-link' to='#'>
+                    <Cropoption
+                        image={sugar}
+                        cname={"Sugar"}
+                    />    
+                </Link>
+                
             </div>
     </div>
     </div>

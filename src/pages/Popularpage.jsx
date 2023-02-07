@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from './Product'
+import Product from '../components/Product'
 import example from '../icons/example.png'
 import {Link } from 'react-router-dom'
 
@@ -10,9 +10,10 @@ import pump from '../images/pump.png'
 import f from '../images/f.png'
 import hh from '../images/hh.png'
 
-const Popularproducts = () => {
+const Popularpage = () => {
   return (
-    <div className='popular-products'>
+    <div className='popular-product-page container-height'>
+        <div className='popular-page-products popular-container-height'>
         <h1>Popular Products</h1>
         <div className="product-container">
             <Product 
@@ -49,10 +50,45 @@ const Popularproducts = () => {
                 info={"UNISON Economy Range Tools"}
                 itemPrice={"150"}
                 />
+
+<Product 
+                itemImage={p}
+                itemName={"Pesticide"}
+                info={"Safer Neem Oil Pesticide"}
+                itemPrice={"150"}
+                />
+
+            <Product 
+                itemImage={w}
+                itemName={"Wheat Seeds"}
+                info={"Sakshi Wheat Seeds (HD 8959)"}
+                itemPrice={"1500"}
+                />
+
+            <Product 
+                itemImage={pump}
+                itemName={"Pump"}
+                info={"Neptune Hand Pump"}
+                itemPrice={"150"}
+                />
+
+            <Product 
+                itemImage={f}
+                itemName={"Fertilizer"}
+                info={"IPL Super Phosphate Fertilizer"}
+                itemPrice={"150"}
+                />
+
+            <Product 
+                itemImage={hh}
+                itemName={"Handheld"}
+                info={"UNISON Economy Range Tools"}
+                itemPrice={"150"}
+                />
         </div>
-        <Link className='explore-more' to='/popularproducts'>Explore more</Link>
+    </div>
     </div>
   )
 }
 
-export default Popularproducts
+export default Popularpage

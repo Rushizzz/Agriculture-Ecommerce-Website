@@ -2,6 +2,9 @@ import './App.css';
 import './mobileView.css';
 import './css/footer.css';
 import './css/cropspage.css';
+import './css/Brandpage.css';
+import './css/Categorypage.css';
+import './css/Popularpage.css';
 import Home from './pages/Home';
 import Data from './components/Data';
 import {createBrowserRouter,
@@ -32,6 +35,9 @@ import searchHIcon from './icons/searchH.png'
 import Brand1 from './pages/Brand1';
 import Footer from './components/Footer';
 import CropsPage from './pages/CropsPage';
+import Brandpage from './pages/Brandpage';
+import Categorypage from './pages/Categorypage';
+import Popularpage from './pages/Popularpage';
 
 const Navbar = () => {
 
@@ -125,15 +131,16 @@ const router = createBrowserRouter(
     <Route path="/" element={<Navbar />}>
       <Route index element={<Home/>} />
       <Route path="/data" element={<Data/>} />
-      <Route path="/products" element={<Category/>} />
+      <Route path="/products" element={<Categorypage/>} />
       <Route path="/signin" element={<Signin/>} />
       <Route path="/category1" element={<Category1/>}/>
       <Route path='/productpage' element={<Productpage/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/brands' element={<Brands/>}/>
+      <Route path='/brands' element={<Brandpage/>}/>
       <Route path='/aboutus' element={<Aboutus/>}/>
       <Route path='/brand' element={<Brand1/>}/>
       <Route path='/crops' element={<CropsPage/>}/>
+      <Route path='/popularproducts' element={<Popularpage/>}/>
     </Route>
   )
 )
