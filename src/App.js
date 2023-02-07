@@ -1,5 +1,7 @@
 import './App.css';
 import './mobileView.css';
+import './css/footer.css';
+import './css/cropspage.css';
 import Home from './pages/Home';
 import Data from './components/Data';
 import {createBrowserRouter,
@@ -27,6 +29,9 @@ import searchIcon from './icons/search.png'
 import cartIcon from './icons/cart.png'
 import signinIcon from './icons/signin.png'
 import searchHIcon from './icons/searchH.png'
+import Brand1 from './pages/Brand1';
+import Footer from './components/Footer';
+import CropsPage from './pages/CropsPage';
 
 const Navbar = () => {
 
@@ -93,7 +98,7 @@ const Navbar = () => {
                 <div className="search-container">
                   <input type="text" placeholder='    search products' className='searchBar'/>
                   <div className="search-btn">
-                    <img src={searchHIcon} alt="" srcset="" />
+                    <img src={searchHIcon}/>
                   </div>
                 </div>
                 
@@ -105,6 +110,7 @@ const Navbar = () => {
     )}
     <div>
       <Outlet/>
+      <Footer/>
     </div>
     {isMobile?(
       <div className="yes"></div>
@@ -126,6 +132,8 @@ const router = createBrowserRouter(
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/brands' element={<Brands/>}/>
       <Route path='/aboutus' element={<Aboutus/>}/>
+      <Route path='/brand' element={<Brand1/>}/>
+      <Route path='/crops' element={<CropsPage/>}/>
     </Route>
   )
 )

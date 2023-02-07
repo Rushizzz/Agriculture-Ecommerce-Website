@@ -1,7 +1,9 @@
 import React from 'react'
 import Banner from '../components/Banner'
+import Crops from '../components/Crops'
 import Popularproducts from '../components/Popularproducts'
 import example from '../icons/example.png'
+import Brands from './Brands'
 import Category from './Category'
 const Home = () => {
   return (
@@ -11,8 +13,12 @@ const Home = () => {
       <h2>Explore different categories. Find the best deals.</h2>
       <button>Shop now</button>
      </div>
-     <Category/>
-     <Popularproducts/>
+     <div className="second-home" id='second-home'>
+      <Category/>
+      <Brands/>
+     </div>
+      <Popularproducts/>
+      <Crops/>
     </div>
   )
 }

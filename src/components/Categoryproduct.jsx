@@ -5,7 +5,6 @@ const Categoryproduct = (props) => {
   return (
     <div className='category-product' style={{backgroundImage: `url(${props.bg})`}} >
         <h1>{props.heading}</h1>
-        <button>Explore</button>
     </div>
   )
 }

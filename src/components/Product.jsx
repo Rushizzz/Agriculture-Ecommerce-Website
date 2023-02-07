@@ -8,11 +8,8 @@ const Product = (props) => {
         </div>
         <div className="product-info">
             <h3>{props.itemName}</h3>
-            <h3>Price : {props.itemPrice}</h3>
-            <div className="product-buttons">
-                <button>Buy now</button>
-                {/* <button>Add to cart</button> */}
-            </div>
+            <p>{props.info}</p>
+            <h3>₹{props.itemPrice}</h3>
         </div>
     </div>
   )
