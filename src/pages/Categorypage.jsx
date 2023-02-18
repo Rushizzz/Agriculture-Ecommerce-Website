@@ -3,7 +3,7 @@ import Category from '../pages/Category'
 
 const Categorypage = () => {
   return (
-    <div className='brand-page category-page'>
+    <div className='category-page'>
         <Category/>
     </div>
   )

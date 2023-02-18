@@ -75,6 +75,7 @@ const CropsPage = () => {
                         cname={"Sugar"}
                     />    
                 </Link>
+
                 
             </div>
     </div>

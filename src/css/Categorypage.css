@@ -1,15 +1,32 @@
 .category-page{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+}
+
+.home-2{
+  width: 1290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-2 h1{
+  font-size: 48px;
+  color: #07484A;
+  height: 8vh;
+  width: 85%;
+  text-align: center;
 }
 
 .category-container{
-    height: 65%;
-    width: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
   }
   
   .category-links{

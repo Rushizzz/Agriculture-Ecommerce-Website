@@ -13,13 +13,11 @@ const Home = () => {
       <h2>Explore different categories. Find the best deals.</h2>
       <button>Shop now</button>
      </div>
-     <div className="second-home" id='second-home'>
       <Category/>
       <Brands/>
-     </div>
       <Popularproducts/>
       <Crops/>
-    </div>
+     </div>
   )
 }
 

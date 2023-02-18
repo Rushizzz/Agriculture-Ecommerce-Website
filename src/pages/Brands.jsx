@@ -16,7 +16,7 @@ import l from '../icons/l.png'
 
 const Brands = () => {
   return (
-    <div className='home-2'>
+    <div className='brand-container'>
       <h1>Explore by Brands</h1>
       <div className="category-container">
         <Link className='brand-name' to='/brand'>
@@ -73,6 +73,7 @@ const Brands = () => {
             title={"LEMKEN"}
           />
         </Link>
+        
       </div>
     </div>
   )

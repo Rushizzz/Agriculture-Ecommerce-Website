@@ -91,28 +91,30 @@ const Navbar = () => {
     </nav>
     ):(
     <nav className="Navigation">
-          <div className="logo">
-            LOGO
-          </div>
-            <div className='Navbar'>
-              <Link className='links' to="/">Home</Link>
-              <Link className="links" to="/products">Categories</Link>
-              <Link className="links" to="/brands">Brands</Link>
-              <Link className='links' to="/aboutus">About</Link>
+      <div className="nav-container">
+        <div className="logo">
+              LOGO
             </div>
-            <div className="search">
-                <div className="search-container">
-                  <input type="text" placeholder='    search products' className='searchBar'/>
-                  <div className="search-btn">
-                    <img src={searchHIcon}/>
+              <div className='Navbar'>
+                <Link className='links' to="/">Home</Link>
+                <Link className="links" to="/products">Categories</Link>
+                <Link className="links" to="/brands">Brands</Link>
+                <Link className='links' to="/aboutus">About</Link>
+              </div>
+              <div className="search">
+                  <div className="search-container">
+                    <input type="text" placeholder='    search products' className='searchBar'/>
+                    <div className="search-btn">
+                      <img src={searchHIcon}/>
+                    </div>
                   </div>
-                </div>
-                
-                  <Link className="second-links" to="/products"><img src={cartIcon}/></Link>
-                  <Link className="second-links" to="/signin"><img src={signinIcon}/></Link>
-                
-            </div>
-        </nav>
+                  
+                    <Link className="second-links" to="/products"><img src={cartIcon}/></Link>
+                    <Link className="second-links" to="/signin"><img src={signinIcon}/></Link>
+                  
+              </div>
+        </div>
+    </nav>
     )}
     <div>
       <Outlet/>

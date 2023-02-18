@@ -1,13 +1,33 @@
 .brand-page{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
+.brand-container{
+    width: 1290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.brand-container h1{
+  font-size: 48px;
+  color: #07484A;
+  height: 8vh;
+  width: 85%;
+  text-align: center;
+  margin-top: 10%;
+}
 .brand-name{
-    height: 20%;
-    width: 40%;
+    height: 150px;
+    width: 300px;
     background-color: whitesmoke;
     border-radius: 30px;
     align-self: center;
@@ -18,7 +38,6 @@
   .brnad-name-container{
     height: 100%;
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,7 +52,7 @@
   }
   
   .brand-logo img{
-    height: 80%;
+    height: 96px;
   }
   
   .info{

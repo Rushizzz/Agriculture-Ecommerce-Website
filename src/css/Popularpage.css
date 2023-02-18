@@ -8,12 +8,10 @@
 }
 
 .popular-products{
-    height: 70vh;
-    width: 100%;
+    width: 1290px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     flex-wrap: wrap;
   }
 
@@ -31,7 +29,7 @@
   }
   
   .popular-products h1{
-    font-size: 36px;
+    font-size: 48px;
     margin: 5px;
     width: 100%;
     text-align: center;
@@ -40,7 +38,7 @@
   }
   
   .product-container{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,14 +49,15 @@
   
   .explore-more{
     background-color: #70908B;
-    height: 10%;
-    width: 15%;
+    height: 64px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: white;
     border-radius: 10px;
+    margin: 20px;
   }
   
   @media only screen and (max-width : 1290px) {

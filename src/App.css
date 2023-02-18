@@ -19,18 +19,27 @@
   overflow: hidden;
 }
 
+.main-container{
+  width: 1290px;
+}
+
 .page h1{
   margin: 30px;
 }
 
 .Navigation{
-  grid-area: topbar;
   background-color: rgb(31, 31, 31);
   position: fixed;
   width: 100%;
   height: 10vh;
   display: flex;
+  justify-content: center;
   color: white;
+}
+
+.nav-container{
+  width: 1290px;
+  display: flex;
 }
 
 .logo{
@@ -43,7 +52,6 @@
 }
 
 .Navbar{
- 
  height: 100%;
  width: 40%;
  display: flex;
@@ -163,24 +171,7 @@
   display: flex;
 }
 
-.home-2{
-  height: 100vh;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
 
-.home-2 h1{
-  font-size: 42px;
-  color: #07484A;
- 
-  height: 8vh;
-  width: 85%;
-  text-align: center;
-}
 
 .crop-option{
   height: 100%;
