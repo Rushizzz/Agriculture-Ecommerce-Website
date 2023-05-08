@@ -19,60 +19,11 @@ const Brands = () => {
     <div className='brand-container'>
       <h1>Explore by Brands</h1>
       <div className="category-container">
-        <Link className='brand-name' to='/brand'>
           <Brandproduct
             brandicon={RIL}
             title={"TATA"}
           />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={NS}
-            title={"NUZIVEEDU"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={PG}
-            title={"POABS"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={N}
-            title={"NATIONAL"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={OP}
-            title={"OUPONT"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={AM}
-            title={"ADVANTA"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={RS}
-            title={"RASI"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={GAL}
-            title={"GODREJ"}
-          />
-        </Link>
-        <Link className='brand-name' to='/brand'>
-          <Brandproduct
-            brandicon={l}
-            title={"LEMKEN"}
-          />
-        </Link>
+        
         
       </div>
     </div>

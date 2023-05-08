@@ -128,6 +128,7 @@
   width: 10%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .home-1{
@@ -265,11 +266,19 @@
 }
 
 .product-info{
-  height: 35%;
+  height: 20%;
   
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.wishlist-icon{
+  height: 10%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .product .product-image img{

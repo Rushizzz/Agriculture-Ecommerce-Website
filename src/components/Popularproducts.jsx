@@ -17,7 +17,7 @@ const Popularproducts = () => {
         <div className="product-container">
             <Product 
                 itemImage={p}
-                itemName={"Pesticide"}
+                itemName={"Pesticide123"}
                 info={"Safer Neem Oil Pesticide"}
                 itemPrice={"150"}
                 />

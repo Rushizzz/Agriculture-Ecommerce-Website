@@ -59,3 +59,8 @@
     width: 50%;
     text-align: center;
   }
+
+  .b-link{
+    text-decoration: none;
+    color: #07484A;
+  }

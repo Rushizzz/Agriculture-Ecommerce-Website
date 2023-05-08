@@ -1,0 +1,32 @@
+.filter {
+    width: 300px;
+    background-color: #F8F0E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .filter > * {
+    margin: 5px;
+  }
+  
+  .filter details {
+    text-align: center;
+  }
+  
+  .filter summary {
+    cursor: pointer;
+  }
+  
+  .filter label {
+    display: block;
+  }
+
+  .nothing-page{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
