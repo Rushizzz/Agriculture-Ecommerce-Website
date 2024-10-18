@@ -21,7 +21,7 @@ const Brands = () => {
                   src={brand.logo}
                   alt={brand.name}
                   width={150}
-                  height={200}
+                  height={150}
                   objectFit="contain"
                 />
               </div>

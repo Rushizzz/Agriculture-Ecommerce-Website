@@ -5,13 +5,13 @@ import seeder_icon from '@/assets/45feda724ac02edb093bba43bf26477d.png';
 import sprayer from '@/assets/kisspng-sosebee-auto-supply-company-sprayer-herbicide-stih-5b383f10db7441.7705259915304128168989.png';
 import harvestor from '@/assets/kisspng-john-deere-model-4020-combine-harvester-agricultur-combine-harvester-5b17f7b9c84613.8055308815282974018203.png';
 import tractor from '@/assets/kisspng-new-holland-agriculture-tractor-john-deere-agricul-5aefbfdd885e83.9059355415256616615586.png'
-import plough from '@/assets/kisspng-sosebee-auto-supply-company-sprayer-herbicide-stih-5b383f10db7441.7705259915304128168989.png'
+import plough from '@/assets/kisspng-land-pride-inc-seed-drill-tractor-great-plains-m-7-6nt-1-6nt-end-wheel-no-till-drills-land-pri-5bab19c51a5231.6320001615379399091078.png'
 
 const products = [
   { name: 'Tractor', image: tractor, price: 25000 },
   { name: 'Harvester', image: harvestor, price: 35000 },
   { name: 'Sprayer', image: sprayer, price: 5000 },
-  { name: 'Plough', image: [plough], price: 2000 },
+  { name: 'Plough', image: plough, price: 2000 },
   { name: 'Seeder', image: seeder_icon, price: 3000 },
 ];
 
