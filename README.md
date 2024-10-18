@@ -7,10 +7,6 @@ Welcome to the Agritech Equipment Store! This website template is built using Ne
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -74,11 +70,3 @@ When you're ready to deploy your application, you can create an optimized build 
 ```bash
 npm run build
 ```
-### Demo
-
-Home page
-![alt text](image-1.png)
-Footer
-![alt text](image-3.png)
-Sign up page
-![alt text](image-4.png)
