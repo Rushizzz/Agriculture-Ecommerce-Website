@@ -1,13 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Heart } from 'lucide-react';
+import seeder_icon from '@/assets/45feda724ac02edb093bba43bf26477d.png';
+import sprayer from '@/assets/kisspng-sosebee-auto-supply-company-sprayer-herbicide-stih-5b383f10db7441.7705259915304128168989.png';
+import harvestor from '@/assets/kisspng-john-deere-model-4020-combine-harvester-agricultur-combine-harvester-5b17f7b9c84613.8055308815282974018203.png';
+import tractor from '@/assets/kisspng-new-holland-agriculture-tractor-john-deere-agricul-5aefbfdd885e83.9059355415256616615586.png'
+import plough from '@/assets/kisspng-sosebee-auto-supply-company-sprayer-herbicide-stih-5b383f10db7441.7705259915304128168989.png'
 
 const products = [
-  { name: 'Tractor', image: 'https://images.unsplash.com/photo-1605338803155-8b46e8af0a60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', price: 25000 },
-  { name: 'Harvester', image: 'https://images.unsplash.com/photo-1605338803155-8b46e8af0a60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', price: 35000 },
-  { name: 'Sprayer', image: 'https://images.unsplash.com/photo-1605338803155-8b46e8af0a60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', price: 5000 },
-  { name: 'Plough', image: 'https://images.unsplash.com/photo-1605338803155-8b46e8af0a60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', price: 2000 },
-  { name: 'Seeder', image: 'https://images.unsplash.com/photo-1605338803155-8b46e8af0a60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80', price: 3000 },
+  { name: 'Tractor', image: tractor, price: 25000 },
+  { name: 'Harvester', image: harvestor, price: 35000 },
+  { name: 'Sprayer', image: sprayer, price: 5000 },
+  { name: 'Plough', image: [plough], price: 2000 },
+  { name: 'Seeder', image: seeder_icon, price: 3000 },
 ];
 
 const PopularProducts = () => {
